@@ -105,6 +105,7 @@ body{
   right: calc(100% - 130px);
 }
 .containercube {
+  margin: 0 0 0 10px;
   height: 600px;
   border: solid red;
 }

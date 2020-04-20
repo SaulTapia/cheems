@@ -104,3 +104,41 @@ body{
   background-color: yellow;
   right: calc(100% - 130px);
 }
+.containercube {
+  height: 600px;
+  border: solid red;
+}
+.cube{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background-color: teal;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation-name: animation-cube;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  position: relative;
+}
+@keyframes animation-cube{
+  0%{
+    top: 0;
+    transform: scale(1);
+  }
+  5%{
+
+  }
+  80%{
+    transform: scale(0.9, 1.2);
+    top: calc(90% - 300px);
+  }
+  100%{
+    top: calc(100% - 250px);
+    transform: scale(1.2, 0.8);
+  }
+}

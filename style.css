@@ -1,42 +1,59 @@
-body {
-  margin: 0;
+body{
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.container {
+.container{
+  width: 100%;
+  position: relative;
+  height: 200px;
+  border: solid red;
+  box-sizing: border-box;
+}
+.pelota{
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  transition-duration: 1s;
+  position: absolute;
+}
+.pelota.a{
+  background-color: blueviolet;
+  left: 0;
+}
+.pelota.b{
+  background-color: cyan;
+  right: 0;
+}
+.container:hover .pelota.a{
+  background-color: coral;
+  width: 200px;
+  height: 200px;
+  right: 100%;
+  left: calc(100% - 200px);
+}
+.container:hover .pelota.b{
+  background-color: springgreen;
+  width: 200px;
+  height: 200px;
+  right: calc(100% - 200px);
+}
+.cajacheems{
+  background-color: sandybrown;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+.cajacheems video{
   width: 100%;
   height: 100%;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  opacity: 0%;
+  transition-duration: 1s;
 }
-
-h1 {
-  position: fixed;
-  color: black;
-  font-size: 48px;
-  top: 40%;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  min-height: 100%;
-  z-index: 10;
-}
-.overlay {
-  position: fixed;
-  background-color: rgba(81, 255, 255, 0.5);
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-}
-#cheems {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
+.cajacheems:hover video{
+  opacity: 100%;
 }

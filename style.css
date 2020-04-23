@@ -12,6 +12,7 @@ body{
   height: 200px;
   border: solid red;
   box-sizing: border-box;
+  margin: 10px;
 }
 .pelota{
   height: 100px;
@@ -161,7 +162,7 @@ body{
   width: 200px;
   height: 200px;
   margin: 0;
-  transform: rotate3d(90deg, 90deg, 90deg);
+  transform: rotate(360deg);
 }
 .box-initial{
   background-color: purple;

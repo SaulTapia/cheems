@@ -149,6 +149,7 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   width: 200px;
+  height: 300px;
 }
 .box{
   background-color: purple;
@@ -170,4 +171,7 @@ body{
   width: 100px;
   height: 100px;
   transition-duration: 2s;
+}
+#button-box{
+  margin: 10px;
 }

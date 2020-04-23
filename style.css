@@ -3,7 +3,7 @@ body{
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .container{
@@ -142,4 +142,31 @@ body{
     top: calc(100% - 250px);
     transform: scale(1.2, 0.8);
   }
+}
+.box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 200px;
+}
+.box{
+  background-color: purple;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  transition-duration: 2s;
+}
+.box-grow{
+  background-color: salmon;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  transform: rotate3d(90deg, 90deg, 90deg);
+}
+.box-initial{
+  background-color: purple;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  transition-duration: 2s;
 }

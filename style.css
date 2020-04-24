@@ -165,13 +165,6 @@ body{
   margin: 0;
   transform: rotate(360deg);
 }
-.box-initial{
-  background-color: purple;
-  margin: 50px;
-  width: 100px;
-  height: 100px;
-  transition-duration: 2s;
-}
 #button-box{
   margin: 10px;
   height: 30px;

@@ -193,3 +193,53 @@ body{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+#dibujo{
+  margin: 60px;
+  transition-duration: 1s;
+  animation-name: dibujito;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes dibujito{
+  10% {
+    transform: rotate(36deg);
+    background-color: blue;
+  }
+  20% {
+    transform: rotate(72deg);
+    background-color: purple;
+  }
+  30% {
+    transform: rotate(108deg);
+    background-color: orange;
+  }
+  40% {
+    transform: rotate(144deg);
+    background-color: pink;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: red;
+  }
+  60% {
+    transform: rotate(216deg);
+    background-color: black;
+  }
+  70% {
+    transform: rotate(252deg);
+    background-color: green;
+  }
+  80% {
+    transform: rotate(288deg);
+    background-color: turquoise;
+  }
+  90% {
+    transform: rotate(324deg);
+    background-color: salmon;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: white;
+  }
+}
